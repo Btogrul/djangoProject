@@ -1,0 +1,5 @@
+# cd - first lets open that directory where is our manage.py file
+# to run that, write: python manage.py runserver
+# python manage.py startapp newName  - to adding new app into our
+# from django.http import HttpResponse <- this import letting us use some html response in our functions
+# from . import name --> . this dot means  than i am importing it from the same folder.
