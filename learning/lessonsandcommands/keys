@@ -1,5 +1,31 @@
-# cd - first lets open that directory where is our manage.py file
-# to run that, write: python manage.py runserver
-# python manage.py startapp newName  - to adding new app into our
-# from django.http import HttpResponse <- this import letting us use some html response in our functions
-# from . import name --> . this dot means  than i am importing it from the same folder.
+ cd - first lets open that directory where is our manage.py file
+---------------------------------------------------------
+to run that, write: python manage.py runserver
+---------------------------------------------------------
+ python manage.py startapp newName  - to adding new app into our
+---------------------------------------------------------
+ from django.http import HttpResponse <- this import letting us use some html response in our functions
+---------------------------------------------------------
+ from . import name --> . this dot means  than i am importing it from the same folder.
+
+ ---------------------------------------------------------
+Jingo's  ->  {%  %}  <-- shablon daet nam vozmojnost delat dinamicheskimi te mesta? kotorie izmenyayutsa v html starince
+  {% block content %}  or  {% section %}
+  {% endblock %}
+---------------------------------------------------------
+for extend default html structure into another html file, use this {% extends 'main/loyal.html' %}
+---------------------------------------------------------
+we can include new full html file into our html using {% include 'main/test.html' %} , forx emp :
+{% extends 'main/loyal.html' %}
+{% block title  %}
+    main page title
+{% endblock %}
+
+{% block content %}
+	<h1>main page</h1>
+    <p>main page</p>
+
+    {% include 'main/test.html' %}
+{% endblock %}
+
+---------------------------------------------------------

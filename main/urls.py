@@ -6,6 +6,7 @@ from learning import views
 
 urlpatterns = [
     path('', main.views.index),
+    path('not', main.views.not_index),
     path('about', main.views.about),
     path('hoho', views.hoho),
     path('img', views.page),
